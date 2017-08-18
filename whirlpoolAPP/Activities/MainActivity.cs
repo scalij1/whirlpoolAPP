@@ -13,7 +13,7 @@ using Android.Support.Design.Widget;
 
 namespace whirlpoolAPP.Activities
 {
-    [Activity(Label = "Home", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
+    [Activity(Label = "Whirlpool Mobile", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
     public class MainActivity : BaseActivity
     {
 

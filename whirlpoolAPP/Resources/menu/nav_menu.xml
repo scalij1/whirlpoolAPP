@@ -9,7 +9,7 @@
     <item
         android:id="@+id/nav_home_2"
         android:icon="@drawable/ic_home_2"
-        android:title="Home 2" />
+        android:title="Bot Estimator" />
   </group>
 
   <item android:title="Sub items">
