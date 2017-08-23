@@ -2,15 +2,29 @@ using Android.OS;
 using Android.Support.V4.App;
 using Android.Views;
 
+using ApiAiSDK;
+using ApiAi.Common;
+using ApiAi.Android;
+using Newtonsoft.Json;
+
+using Android.Widget;
+using Android.Util;
+
+
 namespace whirlpoolAPP.Fragments
 {
     public class Fragment2 : Fragment
     {
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your fragment here
+            //var config = new AIConfiguration("accessToken", SupportedLanguage.English);
+            //aiService = AIService.CreateService(config);
+
+            //aiService.OnResult += AiService_OnResult;
+            //aiService.OnError += AiService_OnError;
         }
 
         public static Fragment2 NewInstance()
