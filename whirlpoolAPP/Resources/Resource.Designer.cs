@@ -27,6 +27,9 @@ namespace whirlpoolAPP
 		public static void UpdateIdValues()
 		{
 			global::ApiAi.Android.Resource.String.library_name = global::whirlpoolAPP.Resource.String.library_name;
+			global::Auth0.OidcClient.Resource.String.ApplicationName = global::whirlpoolAPP.Resource.String.ApplicationName;
+			global::Auth0.OidcClient.Resource.String.Hello = global::whirlpoolAPP.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::whirlpoolAPP.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
@@ -909,29 +912,29 @@ namespace whirlpoolAPP
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0a0045
-			public const int abc_background_cache_hint_selector_material_dark = 2131361861;
-			
 			// aapt resource value: 0x7f0a0046
-			public const int abc_background_cache_hint_selector_material_light = 2131361862;
+			public const int abc_background_cache_hint_selector_material_dark = 2131361862;
+			
+			// aapt resource value: 0x7f0a0047
+			public const int abc_background_cache_hint_selector_material_light = 2131361863;
 			
 			// aapt resource value: 0x7f0a0000
 			public const int abc_input_method_navigation_guard = 2131361792;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int abc_primary_text_disable_only_material_dark = 2131361863;
-			
 			// aapt resource value: 0x7f0a0048
-			public const int abc_primary_text_disable_only_material_light = 2131361864;
+			public const int abc_primary_text_disable_only_material_dark = 2131361864;
 			
 			// aapt resource value: 0x7f0a0049
-			public const int abc_primary_text_material_dark = 2131361865;
+			public const int abc_primary_text_disable_only_material_light = 2131361865;
 			
 			// aapt resource value: 0x7f0a004a
-			public const int abc_primary_text_material_light = 2131361866;
+			public const int abc_primary_text_material_dark = 2131361866;
 			
 			// aapt resource value: 0x7f0a004b
-			public const int abc_search_url_text = 2131361867;
+			public const int abc_primary_text_material_light = 2131361867;
+			
+			// aapt resource value: 0x7f0a004c
+			public const int abc_search_url_text = 2131361868;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int abc_search_url_text_normal = 2131361793;
@@ -942,11 +945,11 @@ namespace whirlpoolAPP
 			// aapt resource value: 0x7f0a0003
 			public const int abc_search_url_text_selected = 2131361795;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int abc_secondary_text_material_dark = 2131361868;
-			
 			// aapt resource value: 0x7f0a004d
-			public const int abc_secondary_text_material_light = 2131361869;
+			public const int abc_secondary_text_material_dark = 2131361869;
+			
+			// aapt resource value: 0x7f0a004e
+			public const int abc_secondary_text_material_light = 2131361870;
 			
 			// aapt resource value: 0x7f0a003e
 			public const int accent = 2131361854;
@@ -1128,17 +1131,20 @@ namespace whirlpoolAPP
 			// aapt resource value: 0x7f0a003b
 			public const int snackbar_background_color = 2131361851;
 			
+			// aapt resource value: 0x7f0a0045
+			public const int splash_background = 2131361861;
+			
 			// aapt resource value: 0x7f0a002f
 			public const int switch_thumb_disabled_material_dark = 2131361839;
 			
 			// aapt resource value: 0x7f0a0030
 			public const int switch_thumb_disabled_material_light = 2131361840;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int switch_thumb_material_dark = 2131361870;
-			
 			// aapt resource value: 0x7f0a004f
-			public const int switch_thumb_material_light = 2131361871;
+			public const int switch_thumb_material_dark = 2131361871;
+			
+			// aapt resource value: 0x7f0a0050
+			public const int switch_thumb_material_light = 2131361872;
 			
 			// aapt resource value: 0x7f0a0031
 			public const int switch_thumb_normal_material_dark = 2131361841;
@@ -1655,11 +1661,17 @@ namespace whirlpoolAPP
 			// aapt resource value: 0x7f02003f
 			public const int Icon = 2130837567;
 			
-			// aapt resource value: 0x7f020041
-			public const int notification_template_icon_bg = 2130837569;
+			// aapt resource value: 0x7f020043
+			public const int notification_template_icon_bg = 2130837571;
 			
 			// aapt resource value: 0x7f020040
 			public const int snackbar_background = 2130837568;
+			
+			// aapt resource value: 0x7f020041
+			public const int splash_logo = 2130837569;
+			
+			// aapt resource value: 0x7f020042
+			public const int splash_screen = 2130837570;
 			
 			static Drawable()
 			{
@@ -2275,6 +2287,12 @@ namespace whirlpoolAPP
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f050014
+			public const int ApplicationName = 2131034132;
+			
+			// aapt resource value: 0x7f050013
+			public const int Hello = 2131034131;
+			
 			// aapt resource value: 0x7f050000
 			public const int abc_action_bar_home_description = 2131034112;
 			
@@ -2326,29 +2344,29 @@ namespace whirlpoolAPP
 			// aapt resource value: 0x7f050010
 			public const int abc_toolbar_collapse_description = 2131034128;
 			
-			// aapt resource value: 0x7f050014
-			public const int app_name = 2131034132;
+			// aapt resource value: 0x7f050016
+			public const int app_name = 2131034134;
 			
 			// aapt resource value: 0x7f050012
 			public const int appbar_scrolling_view_behavior = 2131034130;
 			
-			// aapt resource value: 0x7f050016
-			public const int drawer_close = 2131034134;
-			
-			// aapt resource value: 0x7f050015
-			public const int drawer_open = 2131034133;
-			
 			// aapt resource value: 0x7f050018
-			public const int fragment1 = 2131034136;
-			
-			// aapt resource value: 0x7f050019
-			public const int fragment2 = 2131034137;
-			
-			// aapt resource value: 0x7f050013
-			public const int library_name = 2131034131;
+			public const int drawer_close = 2131034136;
 			
 			// aapt resource value: 0x7f050017
-			public const int menu_refresh = 2131034135;
+			public const int drawer_open = 2131034135;
+			
+			// aapt resource value: 0x7f05001a
+			public const int fragment1 = 2131034138;
+			
+			// aapt resource value: 0x7f05001b
+			public const int fragment2 = 2131034139;
+			
+			// aapt resource value: 0x7f050015
+			public const int library_name = 2131034133;
+			
+			// aapt resource value: 0x7f050019
+			public const int menu_refresh = 2131034137;
 			
 			// aapt resource value: 0x7f050011
 			public const int status_bar_notification_info_overflow = 2131034129;
@@ -2785,6 +2803,9 @@ namespace whirlpoolAPP
 			
 			// aapt resource value: 0x7f070134
 			public const int MyTheme_Base = 2131165492;
+			
+			// aapt resource value: 0x7f070136
+			public const int MyTheme_Splash = 2131165494;
 			
 			// aapt resource value: 0x7f070010
 			public const int Platform_AppCompat = 2131165200;
