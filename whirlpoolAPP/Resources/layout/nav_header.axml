@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="292dp"
+    android:layout_height="192dp"
     android:background="?attr/colorPrimaryDark"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:orientation="vertical"
     android:gravity="bottom">
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/imgfoto" />
+  <refractored.controls.CircleImageView
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_gravity="center"
+      android:id="@+id/imgfoto"
+      app:civ_border_width="2dp"
+      app:civ_border_color="#FF000000" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="UserName"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:id="@+id/txtuser" />
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/txtuser"
+        android:gravity="center_horizontal"
+        />
 </LinearLayout>

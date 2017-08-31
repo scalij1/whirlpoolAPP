@@ -5,11 +5,15 @@
     <item
         android:id="@+id/nav_home_1"
         android:icon="@drawable/ic_home_1"
-        android:title="Home 1" />
+        android:title="Bot estimator" />
     <item
         android:id="@+id/nav_home_2"
         android:icon="@drawable/ic_home_2"
-        android:title="Bot Estimator" />
+        android:title="Resource Allocation" />
+    <item
+       android:id="@+id/nav_home_3"
+       android:icon="@drawable/ic_home_1"
+       android:title="Feedbacks" />
   </group>
 
   <item android:title="Sub items">

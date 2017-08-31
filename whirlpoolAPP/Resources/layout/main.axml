@@ -32,6 +32,23 @@
                 android:maxLines="10000"
                 android:id="@+id/UserDetailsTextView"
                 android:layout_marginTop="0.0dp" />
+            <refractored.controls.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:id="@+id/imgfotoHome"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/txtuserHome"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/imgfotoHome"
+                android:layout_marginTop="90dp" />
         </FrameLayout>
     </RelativeLayout>
     <android.support.design.widget.NavigationView

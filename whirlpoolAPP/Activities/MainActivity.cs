@@ -16,10 +16,10 @@ using Auth0.OidcClient;
 using IdentityModel.OidcClient;
 using Android.Graphics;
 using System.Net;
-
+using System;
+using Android.Runtime;
 
 using Android.Text.Method;
-using System;
 using System.Text;
 
 namespace whirlpoolAPP.Activities
@@ -38,6 +38,8 @@ namespace whirlpoolAPP.Activities
         private TextView userDetailsTextView;
         private TextView txtUsername;
         private ImageView imgFoto;
+        private TextView txtUsernameHome;
+        private ImageView imgFotoHome;
         private AuthorizeState authorizeState;
         ProgressDialog progress;
 
@@ -53,7 +55,11 @@ namespace whirlpoolAPP.Activities
             txtUsername.MovementMethod = new ScrollingMovementMethod();
             txtUsername.Text = String.Empty;
 
+            txtUsernameHome = FindViewById<TextView>(Resource.Id.txtuserHome);
+            txtUsernameHome.Text = String.Empty;
+
             imgFoto = FindViewById<ImageView>(Resource.Id.imgfoto);
+            imgFotoHome = FindViewById<ImageView>(Resource.Id.imgfotoHome);
 
             var loginResult = await client.ProcessResponseAsync(intent.DataString, authorizeState);
 
@@ -65,8 +71,10 @@ namespace whirlpoolAPP.Activities
             }
             else
             {
-               // sb.AppendLine($"ID Token: {loginResult.IdentityToken}");
-               // sb.AppendLine($"Access Token: {loginResult.AccessToken}");
+                progress.Cancel();
+
+                // sb.AppendLine($"ID Token: {loginResult.IdentityToken}");
+                // sb.AppendLine($"Access Token: {loginResult.AccessToken}");
                 //sb.AppendLine($"Refresh Token: {loginResult.RefreshToken}");
 
                 //sb.AppendLine();
@@ -74,27 +82,28 @@ namespace whirlpoolAPP.Activities
 
                 foreach (var claim in loginResult.User.Claims)
                 {
-                    sb.AppendLine($"{claim.Type} = {claim.Value}");
+                    //sb.AppendLine($"{claim.Type} = {claim.Value}");
                     if (claim.Type == "name")
+                    {
                         txtUsername.Text = claim.Value;
+                        txtUsernameHome.Text = claim.Value;
+                    }
+              
 
                     if (claim.Type == "picture")
                     {
-
-                        var imageBitmap = GetImageBitmapFromUrl(claim.Value);
-                        imgFoto.SetImageBitmap(imageBitmap);
-
+                        Koush.UrlImageViewHelper.SetUrlDrawable(imgFoto, claim.Value);
+                        Koush.UrlImageViewHelper.SetUrlDrawable(imgFotoHome, claim.Value);
                     }
-
+                       
                 }        
             }
 
             //userDetailsTextView.Text = sb.ToString();
-            progress.Cancel();
         }
 
 
-
+ 
         private  Bitmap GetImageBitmapFromUrl(string url)
         {
              Bitmap imageBitmap = null;
