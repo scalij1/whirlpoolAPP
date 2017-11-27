@@ -12,7 +12,7 @@ using Android.Support.V4.View;
 using Android.Support.Design.Widget;
 using Auth0.OidcClient;
 using Android.Content;
-using Auth0.OidcClient;
+//using Auth0.OidcClient;
 using IdentityModel.OidcClient;
 using Android.Graphics;
 using System.Net;
@@ -165,9 +165,9 @@ namespace whirlpoolAPP.Activities
                     case Resource.Id.nav_home_1:
                         ListItemClicked(0);
                         break;
-                    case Resource.Id.nav_home_2:
-                        ListItemClicked(1);
-                        break;
+                    //case Resource.Id.nav_home_2:
+                    //    ListItemClicked(1);
+                    //    break;
                 }
 
                 Snackbar.Make(drawerLayout, "You selected: " + e.MenuItem.TitleFormatted, Snackbar.LengthLong)
@@ -217,16 +217,17 @@ namespace whirlpoolAPP.Activities
             switch (position)
             {
                 case 0:
-                    fragment = Fragment1.NewInstance();
+                    //fragment = gratitute.NewInstance();
+                    StartActivity(new Intent(Application.Context, typeof(Gratitude)));
                     break;
                 case 1:
                     fragment = Fragment2.NewInstance();
                     break;
             }
 
-            SupportFragmentManager.BeginTransaction()
-                .Replace(Resource.Id.content_frame, fragment)
-                .Commit();
+            //SupportFragmentManager.BeginTransaction()
+            //    .Replace(Resource.Id.content_frame, fragment)
+            //    .Commit();
         }
 
         public override bool OnOptionsItemSelected(IMenuItem item)

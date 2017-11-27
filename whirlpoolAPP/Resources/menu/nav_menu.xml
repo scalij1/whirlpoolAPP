@@ -4,9 +4,9 @@
   <group android:checkableBehavior="single">
     <item
         android:id="@+id/nav_home_1"
-        android:icon="@drawable/ic_home_1"
-        android:title="Bot estimator" />
-    <item
+        android:icon="@drawable/ic_sentiment_very_satisfied_black_48dp"
+        android:title="Gratitude" />
+    <!-- <item
         android:id="@+id/nav_home_2"
         android:icon="@drawable/ic_home_2"
         android:title="Resource Allocation" />
@@ -14,8 +14,9 @@
        android:id="@+id/nav_home_3"
        android:icon="@drawable/ic_home_1"
        android:title="Feedbacks" />
+       -->
   </group>
-
+  <!--
   <item android:title="Sub items">
     <menu>
       <item
@@ -26,5 +27,5 @@
           android:title="Sub item 2" />
     </menu>
   </item>
-
+-->
 </menu>

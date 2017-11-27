@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+      <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:local="http://schemas.android.com/apk/res-auto"
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/toolbar"
+      android:id="@+id/scrollView1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/main_content"
+        android:minHeight="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="15px">
+      <TextView
+          android:text="Quem está agradecendo."
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:id="@+id/textView1" />
+      <TextView
+          android:text="Email: jefferson_s_pecanha@whirlpool.com"
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtColab" />
+      <TextView
+          android:text="Quem eu quero agradecer."
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20px"
+          android:textStyle="bold"
+          android:id="@+id/textView2" />
+      <Spinner
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/spinner1" />
+      <TextView
+          android:text="Crie uma estratégia envolvente e inspiradora."
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textStyle="bold"
+          android:textColor="@android:color/holo_green_dark"
+          android:layout_marginTop="25px"
+          android:id="@+id/textView3" />
+      <RadioGroup
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/radioGroup1">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Ter Paixão"
+            android:id="@+id/rdbTerPaixao"
+            android:textColor="@android:color/holo_green_dark"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:buttonTint="@android:color/holo_green_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Seja Ousado"
+            android:id="@+id/rdbSerOusado"
+            android:textColor="@android:color/holo_green_dark"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:buttonTint="@android:color/holo_green_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Jogue para Ganhar"
+            android:id="@+id/rdbJogueParaGanhar"
+            android:textColor="@android:color/holo_green_dark"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:buttonTint="@android:color/holo_green_dark" />
+      </RadioGroup>
+      <TextView
+          android:text="Conquiste e cultive seguidores."
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView4"
+          android:textStyle="bold"
+          android:textColor="@android:color/holo_blue_dark"
+          android:layout_marginTop="20px" />
+      <RadioGroup
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/radioGroup2">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Liberar os Talentos"
+            android:id="@+id/rdbLiberarOsTalentos"
+            android:textColor="@android:color/holo_blue_dark"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:buttonTint="@android:color/holo_blue_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Uma só Whirlpool"
+            android:id="@+id/rdbUmaWhirlpool"
+            android:textColor="@android:color/holo_blue_dark"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:buttonTint="@android:color/holo_blue_dark" />
+      </RadioGroup>
+      <TextView
+          android:text="Entregue resultados extraordinários."
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView5"
+          android:textStyle="bold"
+          android:textColor="@android:color/holo_red_dark"
+          android:layout_marginTop="20px" />
+      <RadioGroup
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/radioGroup3">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Liderar com velocidade"
+            android:id="@+id/rdbLiderarComVelocidade"
+            android:textColor="@android:color/holo_red_dark"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:buttonTint="@android:color/holo_red_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Ser o dono"
+            android:id="@+id/rdbSeroDono"
+            android:textColor="@android:color/holo_red_dark"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:buttonTint="@android:color/holo_red_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Ser franco"
+            android:id="@+id/rdnSerFranco"
+            android:textColor="@android:color/holo_red_dark"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:buttonTint="@android:color/holo_red_dark" />
+      </RadioGroup>
+      <TextView
+          android:text="Viva e pratique os valores da Whirlpool."
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView6"
+          android:textStyle="bold"
+          android:textColor="@android:color/holo_orange_dark"
+          android:layout_marginTop="20px" />
+      <RadioGroup
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/radioGroup4">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Respeito"
+            android:id="@+id/rdbRespeito"
+            android:textColor="@android:color/holo_orange_dark"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:buttonTint="@android:color/holo_orange_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Integridade"
+            android:id="@+id/rdbIntegridade"
+            android:textColor="@android:color/holo_orange_dark"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:buttonTint="@android:color/holo_orange_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Diversidade e inclusão"
+            android:id="@+id/rdbDiversidadeeInclusao"
+            android:textColor="@android:color/holo_orange_dark"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:buttonTint="@android:color/holo_orange_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Trabalho de equipe"
+            android:id="@+id/rdbTrabalhoDeEquipe"
+            android:textColor="@android:color/holo_orange_dark"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:buttonTint="@android:color/holo_orange_dark" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="22.0dp"
+            android:text="Espírito de vitória"
+            android:id="@+id/rdbEspiritoDeVitoria"
+            android:textColor="@android:color/holo_orange_dark"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:buttonTint="@android:color/holo_orange_dark" />
+      </RadioGroup>
+      <TextView
+          android:text="Comentários (Opcional)."
+          android:textAppearance="?android:attr/textAppearanceSmall"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20px"
+          android:textStyle="bold"
+          android:id="@+id/textView2" />
+      <android.support.design.widget.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/txtComentario"
+          android:textAppearance="?android:attr/editTextBackground" />
+    </LinearLayout>
+  </ScrollView>
+</RelativeLayout>
